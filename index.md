@@ -6,28 +6,29 @@ Master of English Literatures and Cultures | University of Tübingen
 
  neophilology@gmail.com | [GitHub](https://github.com/neophilology) | [LinkedIn](https://linkedin.com/in/danielbarrera-neophilology)
 
+![Daniel Barrera Rivera](./assets/images/Dan_BW02.png)
 ---
 
 ## Research Portfolio: Entangled Narratologies
 
-I investigate narrative as an entangled system—a network of dumb and smart actants, a compost of technologies and media, traditions and cultures intra-acting beyond the human into every aspect of our lives: identity, education, policy, memory, rituals, spirituality. My work traces these entanglements from ancient archetypes to contemporary algorithmic systems, developing what I call an **AI narratology** that recognizes storytelling as fundamentally networked, materially embedded, and computationally mediated.
+I investigate narrative as an entangled system—a network of dumb and smart actants, a compost of technologies and media, traditions and cultures intra-acting beyond the human into every aspect of our lives: identity, education, policy, memory, rituals, spirituality. My work traces these entanglements from ancient archetypes to contemporary algorithmic systems, developing an **AI narratology** that recognizes storytelling as fundamentally networked, materially embedded, and computationally mediated.
 
 ## Current Projects
 
 ### **Perilexemes: Character Transformation in Victorian Fiction**
 [Repository - Coming Soon]
 
-A computational framework for analyzing lexical patterns of character transformation, focalization, and narrative structure. This project develops quantitative methods to trace how dramatic arcs function as mechanisms for character development, bridging Aristotelian poetics with contemporary computational linguistics. The framework reveals how Victorian novels encode transformation through specific lexical clusters—"perilexemes"—that operate below the threshold of traditional close reading yet structure reader experience at fundamental levels.
+A computational framework for analyzing lexical patterns of character transformation, focalization, and narrative structure. This project develops quantitative methods to trace how dramatic arcs function as mechanisms for character development, bridging Aristotelian poetics with contemporary computational linguistics. The framework reveals how Victorian novels encode transformation through specific lexical-agent clusters—"perilexemes"—that operate below the threshold of traditional close reading yet structure reader experience at fundamental levels. This previously unrecognized narrative device in the future could become a new types of categories and relations through the study of perilexia.
 
 ### **Target as Source: Four Centuries of Odyssey Translations**
 [Project Documentation](https://neophilology.github.io/English-Homer/)
 
 A computational analysis of cultural drift across 400 years of Odyssey translations, revealing how target languages increasingly shape source text interpretation. This project demonstrates that Homer exists not merely as text but as a cultural algorithm—embedded deep in Western narrative consciousness, continuously recompiled through each translation's technical and ideological constraints. The analysis traces how translation becomes a site of cultural negotiation where the boundaries between source and target, ancient and contemporary, dissolve into productive entanglement.
 
-### **Beyond-Homer: Digital Dissertation with Interactive Appendices**
-[Interactive Appendices](https://neophilology.github.io/Beyond-Homer/)
+### **Beyond-Homer: Digital Dissertation with Appendices**
+[Appendices](https://neophilology.github.io/Beyond-Homer/)
 
-My master's thesis exploring how contemporary retellings negotiate classical authority through computational and narratological lenses:
+My master's thesis exploring how contemporary retellings negotiate classical authority through affect and algorithms, reconfiguring traditional narratological lenses:
 
 - **Logosomatic Narratology: Embodied Voice and Feminist Retelling in Madeline Miller's *Circe***  
   An analysis of how contemporary fiction creates "logosomatic" spaces where word and flesh, voice and body remain productively entangled. The project theorizes narrative embodiment beyond metaphor, examining how Miller's text performs rather than represents feminist intervention in classical tradition.
@@ -87,7 +88,7 @@ My research trajectory aims toward:
 
 3. **Building Collaborative Networks** that bring together computational researchers, literary scholars, and cultural practitioners to ensure that AI narratology develops as a genuinely interdisciplinary field
 
-The stakes of this work extend beyond academic inquiry. As AI systems increasingly mediate our narrative experiences—from educational content to therapeutic interventions—we need frameworks for understanding how these systems encode, perpetuate, and potentially transform the stories through which we understand ourselves and our worlds.
+The stakes of this work extend beyond academic inquiry. As AI systems increasingly mediate our narrative experiences—from educational content to policy and therapeutic interventions—we need frameworks for understanding how these systems encode, perpetuate, and potentially transform the stories through which we understand ourselves and our worlds.
 
 ## Scholarly Conversation
 
@@ -102,3 +103,5 @@ I seek dialogue with researchers interested in:
 ---
 
 *This research emerges from the recognition that narrative has always been technological, from oral formulae to print conventions to digital architectures. The question is not whether technology shapes storytelling but how we might participate more consciously in these ongoing reconfigurations of narrative possibility.*
+
+![Homer's Living Network Banner](./assets/images/neoPHilology-BANNER-wLogo.png)
