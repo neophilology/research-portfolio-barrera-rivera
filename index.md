@@ -6,12 +6,15 @@ Master of English Literatures and Cultures | University of Tübingen
 
  neophilology@gmail.com | [GitHub](https://github.com/neophilology) | [LinkedIn](https://linkedin.com/in/danielbarrera-neophilology)
 
-![Daniel Barrera Rivera](./assets/images/Dan_BW02.png)
+<img src="./assets/images/Dan_BW02.png" alt="Daniel Barrere-Rivera" width="84"/>
+
 ---
 
 ## Research Portfolio: Entangled Narratologies
 
 I investigate narrative as an entangled system—a network of dumb and smart actants, a compost of technologies and media, traditions and cultures intra-acting beyond the human into every aspect of our lives: identity, education, policy, memory, rituals, spirituality. My work traces these entanglements from ancient archetypes to contemporary algorithmic systems, developing an **AI narratology** that recognizes storytelling as fundamentally networked, materially embedded, and computationally mediated.
+
+---
 
 ## Current Projects
 
@@ -46,6 +49,7 @@ My master's thesis exploring how contemporary retellings negotiate classical aut
 
 Interactive data visualizations mapping the geographic and temporal distribution of Old English manuscripts. This project reveals how textual preservation and loss follow specific cultural patterns, treating manuscripts not as static artifacts but as nodes in dynamic networks of transmission, translation, and transformation.
 
+---
 ## Research Trajectory: AI Narratology as Critical Framework
 
 My research develops **AI narratology** as a critical field for understanding how Large Language Models and other computational systems function as contemporary storyteller-agents. This work moves beyond questions of whether machines can tell stories to examine how algorithmic processes already participate in narrative construction at every level—from the technical architectures that encode certain plot structures as "coherent" to the training corpora that privilege specific cultural frameworks of transformation and return.
@@ -72,6 +76,7 @@ My digital humanities practice treats computational methods not as neutral tools
 - **Critical Code Studies**: Reading the technical documentation and architecture of AI systems as theoretical texts that encode specific narratological assumptions
 - **Entangled Analytics**: Creating visualization methods that represent narrative not as linear progression but as networked emergence
 
+---
 ## Positioning and Perspective
 
 As a researcher navigating between Mexican and European academic contexts, between traditional philology and computational methods, I work from what Sara Ahmed might call an "oblique angle"—a position that makes visible the contingency of dominant narrative frameworks. This obliquity is not limitation but method, revealing how certain stories achieve the appearance of universality while others remain marked as particular, ethnic, or marginal.
