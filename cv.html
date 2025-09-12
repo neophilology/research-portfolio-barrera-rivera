@@ -61,6 +61,7 @@
       font-size: 0.9rem;
       color: #555;
     }
+    .cv-item.active .cv-details,
     .cv-item:hover .cv-details {
       opacity: 1;
       max-height: 500px;
@@ -199,5 +200,14 @@
   <footer>
     <p>© 2025 Daniel E. Barrera Rivera | <a href="./CV-Daniel_Barrera_2025_ACADEMIC_STREAMLINED.pdf">Download PDF Version</a></p>
   </footer>
+
+  <script>
+    // Enable click-to-expand on mobile devices
+    document.querySelectorAll('.cv-item').forEach(item => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('active');
+      });
+    });
+  </script>
 </body>
 </html>

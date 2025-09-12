@@ -49,6 +49,14 @@ I aim to:
 👉 [Read More About My PhD Project](./phd.md)  
 
 ---
+## Curriculum Vitae
+
+You can explore my CV interactively or download the standard PDF version:
+
+- [📄 Interactive CV](./cv.html)
+- [⬇️ Download PDF CV](./assets/CV-Daniel_Barrera_2025_ACADEMIC_STREAMLINED.pdf)
+
+---
 
 ## Contact  
 
@@ -60,7 +68,6 @@ I welcome dialogue and collaboration on:
 📧 **neophilology@gmail.com**  
 🔗 [GitHub](https://github.com/neophilology) | [LinkedIn](https://linkedin.com/in/danielbarrera-neophilology)  
 
-[CV](./cv.html)
 ---
 
 <small>© 2025 Daniel E. Barrera Rivera | Site powered by GitHub Pages</small>

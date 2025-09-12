@@ -25,7 +25,7 @@
   - [Perilexia](/perilexia.md)
   - [Target as Source / English Homer](/english-homer.md)
   - [Beyond Homer](/beyond-homer.md)
-  - [Manuscript Geographies](/manuscript-geographies.md) (optional future page)
+  - [visualizing all Old English Manuscripts](./OE_manuscripts.md) (optional future page)
 
 ---
 
