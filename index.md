@@ -1,6 +1,6 @@
 # Daniel E. Barrera Rivera
 
-**Digital Humanities Researcher | Computational Narratologist | Literary Scholar**
+**Digital Humanities Researcher** | **Computational Narratologist** | **Literary Scholar**
 
 Master of English Literatures and Cultures | University of Tübingen
 
@@ -12,13 +12,18 @@ Master of English Literatures and Cultures | University of Tübingen
 
 ## Research Portfolio: Entangled Narratologies
 
-I investigate narrative as an entangled system—a network of dumb and smart actants, a compost of technologies and media, traditions and cultures intra-acting beyond the human into every aspect of our lives: identity, education, policy, memory, rituals, spirituality. My work traces these entanglements from ancient archetypes to contemporary algorithmic systems, developing an **AI narratology** that recognizes storytelling as fundamentally networked, materially embedded, and computationally mediated.
+***We are compost, not posthuman***
+(Donna Haraway, Staying Wth the Trouble, 97)
+
+I investigate narrative as an entangled system—a network of dumb and smart actants, a compost of technologies and media, traditions and cultures intra-acting beyond the human into 
+
+every aspect of our lives: identity, education, policy, memory, rituals, spirituality. My work traces these entanglements from ancient archetypes to contemporary algorithmic systems, developing an **AI narratology** that recognizes storytelling as fundamentally networked, materially embedded, and computationally mediated.
 
 ---
 
 ## Current Projects
 
-### **Perilexemes: Character Transformation in Victorian Fiction**
+### **Perilexia: Character Transformation in Victorian Fiction**
 [Repository - Coming Soon]
 
 A computational framework for analyzing lexical patterns of character transformation, focalization, and narrative structure. This project develops quantitative methods to trace how dramatic arcs function as mechanisms for character development, bridging Aristotelian poetics with contemporary computational linguistics. The framework reveals how Victorian novels encode transformation through specific lexical-agent clusters—"perilexemes"—that operate below the threshold of traditional close reading yet structure reader experience at fundamental levels. This previously unrecognized narrative device in the future could become a new types of categories and relations through the study of perilexia.
