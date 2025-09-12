@@ -24,7 +24,7 @@
     main {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 0 1rem 4rem; /* extra bottom padding for fixed button */
     }
     .cv-section {
       margin-bottom: 2rem;
@@ -43,11 +43,12 @@
       border-radius: 12px;
       padding: 1rem;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
     .cv-item:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     }
     .cv-item h3 {
       margin-top: 0;
@@ -55,13 +56,19 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      user-select: none;
     }
     .toggle-icon {
       font-weight: bold;
       transition: transform 0.3s ease;
+      font-size: 1.2rem;
+      color: #666;
+      min-width: 20px;
+      text-align: center;
     }
-    .cv-item.active .toggle-icon {
+    .cv-item.expanded .toggle-icon {
       transform: rotate(90deg);
+      color: #0073e6;
     }
     .cv-details {
       opacity: 0;
@@ -70,12 +77,24 @@
       transition: all 0.4s ease;
       font-size: 0.9rem;
       color: #555;
+      line-height: 1.5;
     }
-    .cv-item.active .cv-details,
-    .cv-item:hover .cv-details {
+    .cv-item.expanded .cv-details {
       opacity: 1;
       max-height: 500px;
       margin-top: 0.5rem;
+    }
+    /* On larger screens, show details on hover as well */
+    @media (min-width: 768px) {
+      .cv-item:hover .cv-details {
+        opacity: 1;
+        max-height: 500px;
+        margin-top: 0.5rem;
+      }
+      .cv-item:hover .toggle-icon {
+        transform: rotate(90deg);
+        color: #0073e6;
+      }
     }
     footer {
       text-align: center;
@@ -91,18 +110,59 @@
       text-decoration: underline;
     }
     .back-home {
-      display: inline-block;
-      margin: 1rem auto;
-      padding: 0.5rem 1rem;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 0.6rem 1rem;
       background: #0073e6;
       color: #fff;
       border-radius: 6px;
       text-decoration: none;
       font-size: 0.9rem;
-      transition: background 0.3s ease;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+      transition: background 0.3s ease, transform 0.2s ease;
+      z-index: 1000;
     }
     .back-home:hover {
       background: #005bb5;
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    /* Expand all button */
+    .expand-controls {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .expand-all-btn {
+      background: #666;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .expand-all-btn:hover {
+      background: #555;
+    }
+    /* Mobile responsiveness */
+    @media (max-width: 768px) {
+      header {
+        padding: 1.5rem 1rem;
+      }
+      main {
+        padding: 0 0.5rem 4rem;
+      }
+      .cv-list {
+        grid-template-columns: 1fr;
+      }
+      .back-home {
+        bottom: 15px;
+        right: 15px;
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+      }
     }
   </style>
 </head>
@@ -120,24 +180,29 @@
       <p>Digital humanities researcher bridging literary narratology and computational methods. My work develops an <em>AI narratology</em> to analyze how narrative emerges across texts, translations, and algorithmic systems.</p>
     </section>
 
+    <!-- Expand Controls -->
+    <div class="expand-controls">
+      <button class="expand-all-btn" onclick="toggleAllSections()">Expand All Sections</button>
+    </div>
+
     <!-- Education -->
     <section class="cv-section">
       <h2>Education</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Master’s in English Literatures and Cultures (2023–2025)<span class="toggle-icon">▸</span></h3>
+          <h3>Master's in English Literatures and Cultures (2023–2025)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">University of Tübingen, Germany.<br>Thesis: <em>Beyond Homer and the Human: Affects and Algorithms in Posthuman Odysseys</em>.</div>
         </li>
         <li class="cv-item">
-          <h3>Data Science, Professional Certificate (2021–2022)<span class="toggle-icon">▸</span></h3>
+          <h3>Data Science, Professional Certificate (2021–2022)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">University of Toronto, Canada.</div>
         </li>
         <li class="cv-item">
-          <h3>Digital Humanities, Advanced Diploma (2021)<span class="toggle-icon">▸</span></h3>
+          <h3>Digital Humanities, Advanced Diploma (2021)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Universidad Iberoamericana, CDMX, México.</div>
         </li>
         <li class="cv-item">
-          <h3>Bachelor's in Modern Languages & Literatures (English), 2016–2020<span class="toggle-icon">▸</span></h3>
+          <h3>Bachelor's in Modern Languages & Literatures (English), 2016–2020<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">UNAM, México — Graduated with Honors.</div>
         </li>
       </ul>
@@ -148,7 +213,7 @@
       <h2>Research & Scholarly Activity</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Projects<span class="toggle-icon">▸</span></h3>
+          <h3>Projects<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">
             • Homer's Living Network — DH project using data science on Odyssey translations.<br>
             • Perilexia — Five-stage algorithm identifying lexical patterns in Victorian novels.<br>
@@ -156,7 +221,7 @@
           </div>
         </li>
         <li class="cv-item">
-          <h3>Conference Presentations<span class="toggle-icon">▸</span></h3>
+          <h3>Conference Presentations<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">
             • ACLA Annual Meeting, Chicago (2020)<br>
             • ACLA Annual Meeting, Utrecht (2017)<br>
@@ -164,7 +229,7 @@
           </div>
         </li>
         <li class="cv-item">
-          <h3>Grants<span class="toggle-icon">▸</span></h3>
+          <h3>Grants<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">FONCA Creative Writing Fellowship, one-year grant, México (2014).</div>
         </li>
       </ul>
@@ -175,19 +240,19 @@
       <h2>Experience</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Editor & Quality Auditor (2023)<span class="toggle-icon">▸</span></h3>
+          <h3>Editor & Quality Auditor (2023)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Department of Public Education (SEP), CDMX. Edited and proofread manuscripts, collaborating with educators, linguists, and publishing teams.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor | Editorial & SEO Specialist (2022)<span class="toggle-icon">▸</span></h3>
+          <h3>Quality Auditor | Editorial & SEO Specialist (2022)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">StudySmarter, Germany. Audited academic content, improved editorial workflows, developed NLP app for cross-platform consistency.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor & Content Developer (2021–2022)<span class="toggle-icon">▸</span></h3>
+          <h3>Quality Auditor & Content Developer (2021–2022)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">OpenTec, CDMX. Supervised e-learning content, managed corporate partnerships, optimized factual accuracy.</div>
         </li>
         <li class="cv-item">
-          <h3>Editor & Proofreader (2018–2021)<span class="toggle-icon">▸</span></h3>
+          <h3>Editor & Proofreader (2018–2021)<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Aliat Universidades, CDMX. Ensured metadata accuracy, reviewed manuscripts, improved clarity and engagement.</div>
         </li>
       </ul>
@@ -198,43 +263,109 @@
       <h2>Skills & Tools</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Programming & Data Science<span class="toggle-icon">▸</span></h3>
+          <h3>Programming & Data Science<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Python (ML, NLP, visualization), NLTK, spaCy, HuggingFace, Textacy, Gensim, Regex. Custom tool development. Basic R.</div>
         </li>
         <li class="cv-item">
-          <h3>Digital Humanities & Editorial<span class="toggle-icon">▸</span></h3>
+          <h3>Digital Humanities & Editorial<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Text analysis, corpus construction, stylometry, distant reading. Markdown, HTML, LaTeX. CMS workflows.</div>
         </li>
         <li class="cv-item">
-          <h3>Data Visualization<span class="toggle-icon">▸</span></h3>
+          <h3>Data Visualization<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Pandas, Matplotlib, Seaborn, Plotly. Experience with manuscript geographies and lexical networks.</div>
         </li>
         <li class="cv-item">
-          <h3>Collaboration & Project Management<span class="toggle-icon">▸</span></h3>
+          <h3>Collaboration & Project Management<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">Git, Asana, Trello, Slack, Google Workspace, Microsoft Office.</div>
         </li>
         <li class="cv-item">
-          <h3>Languages<span class="toggle-icon">▸</span></h3>
+          <h3>Languages<span class="toggle-icon">▶</span></h3>
           <div class="cv-details">English (fluent), Spanish (fluent), German (basic).</div>
         </li>
       </ul>
     </section>
-
-    <!-- Back Home Button -->
-    <div style="text-align:center; margin:2rem 0;">
-      <a href="/index.md" class="back-home">← Back to Home</a>
-    </div>
   </main>
+
+  <!-- Back home button with improved functionality -->
+  <a href="/" class="back-home" onclick="handleBackHome(event)">← Back to Home</a>
 
   <footer>
     <p>© 2025 Daniel E. Barrera Rivera | <a href="./CV-Daniel_Barrera_2025.pdf">Download PDF Version</a></p>
   </footer>
 
   <script>
-    // Enable click-to-expand on mobile devices
+    let allExpanded = false;
+
+    // Handle individual item clicks
     document.querySelectorAll('.cv-item').forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('active');
+      item.addEventListener('click', (e) => {
+        // Prevent event bubbling if clicking on links inside details
+        if (e.target.tagName === 'A') return;
+        
+        item.classList.toggle('expanded');
+      });
+    });
+
+    // Toggle all sections
+    function toggleAllSections() {
+      const allItems = document.querySelectorAll('.cv-item');
+      const button = document.querySelector('.expand-all-btn');
+      
+      if (!allExpanded) {
+        allItems.forEach(item => item.classList.add('expanded'));
+        button.textContent = 'Collapse All Sections';
+        allExpanded = true;
+      } else {
+        allItems.forEach(item => item.classList.remove('expanded'));
+        button.textContent = 'Expand All Sections';
+        allExpanded = false;
+      }
+    }
+
+    // Improved back home functionality
+    function handleBackHome(event) {
+      // Try different common home page paths
+      const possiblePaths = ['/', '/index.html', '../index.html', './index.html'];
+      
+      // Check if we can determine the correct path based on current location
+      const currentPath = window.location.pathname;
+      
+      // If we're in a subdirectory, try going up one level
+      if (currentPath.includes('/')) {
+        const pathParts = currentPath.split('/');
+        if (pathParts.length > 2) {
+          event.preventDefault();
+          window.location.href = '../';
+          return;
+        }
+      }
+      
+      // Default behavior - let the browser handle the link
+      // The href="/" will work for most GitHub Pages setups
+    }
+
+    // Keyboard accessibility
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        // Close all expanded sections on Escape
+        document.querySelectorAll('.cv-item.expanded').forEach(item => {
+          item.classList.remove('expanded');
+        });
+        const button = document.querySelector('.expand-all-btn');
+        button.textContent = 'Expand All Sections';
+        allExpanded = false;
+      }
+    });
+
+    // Add focus styles for keyboard navigation
+    document.querySelectorAll('.cv-item').forEach(item => {
+      item.setAttribute('tabindex', '0');
+      
+      item.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          item.classList.toggle('expanded');
+        }
       });
     });
   </script>
