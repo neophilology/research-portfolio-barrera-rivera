@@ -60,6 +60,7 @@ I welcome dialogue and collaboration on:
 📧 **neophilology@gmail.com**  
 🔗 [GitHub](https://github.com/neophilology) | [LinkedIn](https://linkedin.com/in/danielbarrera-neophilology)  
 
+[CV](./cv.html)
 ---
 
 <small>© 2025 Daniel E. Barrera Rivera | Site powered by GitHub Pages</small>
