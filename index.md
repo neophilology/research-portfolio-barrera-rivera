@@ -54,7 +54,7 @@ I aim to:
 You can explore my CV interactively or download the standard PDF version:
 
 - [📄 Interactive CV](./cv.html)
-- [⬇️ Download PDF CV](./assets/CV-Daniel_Barrera_2025_ACADEMIC_STREAMLINED.pdf)
+- [⬇️ Download PDF CV](./assets/CV-Daniel_Barrera_2025.pdf)
 
 ---
 
