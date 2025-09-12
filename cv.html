@@ -52,6 +52,16 @@
     .cv-item h3 {
       margin-top: 0;
       font-size: 1.1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .toggle-icon {
+      font-weight: bold;
+      transition: transform 0.3s ease;
+    }
+    .cv-item.active .toggle-icon {
+      transform: rotate(90deg);
     }
     .cv-details {
       opacity: 0;
@@ -80,6 +90,20 @@
     a:hover {
       text-decoration: underline;
     }
+    .back-home {
+      display: inline-block;
+      margin: 1rem auto;
+      padding: 0.5rem 1rem;
+      background: #0073e6;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: background 0.3s ease;
+    }
+    .back-home:hover {
+      background: #005bb5;
+    }
   </style>
 </head>
 <body>
@@ -101,19 +125,19 @@
       <h2>Education</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Master’s in English Literatures and Cultures (2023–2025)</h3>
+          <h3>Master’s in English Literatures and Cultures (2023–2025)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">University of Tübingen, Germany.<br>Thesis: <em>Beyond Homer and the Human: Affects and Algorithms in Posthuman Odysseys</em>.</div>
         </li>
         <li class="cv-item">
-          <h3>Data Science, Professional Certificate (2021–2022)</h3>
+          <h3>Data Science, Professional Certificate (2021–2022)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">University of Toronto, Canada.</div>
         </li>
         <li class="cv-item">
-          <h3>Digital Humanities, Advanced Diploma (2021)</h3>
+          <h3>Digital Humanities, Advanced Diploma (2021)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Universidad Iberoamericana, CDMX, México.</div>
         </li>
         <li class="cv-item">
-          <h3>Bachelor's in Modern Languages & Literatures (English), 2016–2020</h3>
+          <h3>Bachelor's in Modern Languages & Literatures (English), 2016–2020<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">UNAM, México — Graduated with Honors.</div>
         </li>
       </ul>
@@ -124,7 +148,7 @@
       <h2>Research & Scholarly Activity</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Projects</h3>
+          <h3>Projects<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">
             • Homer's Living Network — DH project using data science on Odyssey translations.<br>
             • Perilexia — Five-stage algorithm identifying lexical patterns in Victorian novels.<br>
@@ -132,7 +156,7 @@
           </div>
         </li>
         <li class="cv-item">
-          <h3>Conference Presentations</h3>
+          <h3>Conference Presentations<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">
             • ACLA Annual Meeting, Chicago (2020)<br>
             • ACLA Annual Meeting, Utrecht (2017)<br>
@@ -140,7 +164,7 @@
           </div>
         </li>
         <li class="cv-item">
-          <h3>Grants</h3>
+          <h3>Grants<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">FONCA Creative Writing Fellowship, one-year grant, México (2014).</div>
         </li>
       </ul>
@@ -151,19 +175,19 @@
       <h2>Experience</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Editor & Quality Auditor (2023)</h3>
+          <h3>Editor & Quality Auditor (2023)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Department of Public Education (SEP), CDMX. Edited and proofread manuscripts, collaborating with educators, linguists, and publishing teams.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor | Editorial & SEO Specialist (2022)</h3>
+          <h3>Quality Auditor | Editorial & SEO Specialist (2022)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">StudySmarter, Germany. Audited academic content, improved editorial workflows, developed NLP app for cross-platform consistency.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor & Content Developer (2021–2022)</h3>
+          <h3>Quality Auditor & Content Developer (2021–2022)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">OpenTec, CDMX. Supervised e-learning content, managed corporate partnerships, optimized factual accuracy.</div>
         </li>
         <li class="cv-item">
-          <h3>Editor & Proofreader (2018–2021)</h3>
+          <h3>Editor & Proofreader (2018–2021)<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Aliat Universidades, CDMX. Ensured metadata accuracy, reviewed manuscripts, improved clarity and engagement.</div>
         </li>
       </ul>
@@ -174,27 +198,32 @@
       <h2>Skills & Tools</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Programming & Data Science</h3>
+          <h3>Programming & Data Science<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Python (ML, NLP, visualization), NLTK, spaCy, HuggingFace, Textacy, Gensim, Regex. Custom tool development. Basic R.</div>
         </li>
         <li class="cv-item">
-          <h3>Digital Humanities & Editorial</h3>
+          <h3>Digital Humanities & Editorial<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Text analysis, corpus construction, stylometry, distant reading. Markdown, HTML, LaTeX. CMS workflows.</div>
         </li>
         <li class="cv-item">
-          <h3>Data Visualization</h3>
+          <h3>Data Visualization<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Pandas, Matplotlib, Seaborn, Plotly. Experience with manuscript geographies and lexical networks.</div>
         </li>
         <li class="cv-item">
-          <h3>Collaboration & Project Management</h3>
+          <h3>Collaboration & Project Management<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">Git, Asana, Trello, Slack, Google Workspace, Microsoft Office.</div>
         </li>
         <li class="cv-item">
-          <h3>Languages</h3>
+          <h3>Languages<span class="toggle-icon">▸</span></h3>
           <div class="cv-details">English (fluent), Spanish (fluent), German (basic).</div>
         </li>
       </ul>
     </section>
+
+    <!-- Back Home Button -->
+    <div style="text-align:center; margin:2rem 0;">
+      <a href="/index.md" class="back-home">← Back to Home</a>
+    </div>
   </main>
 
   <footer>
