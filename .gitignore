@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# My random local stuff
+*.swp
+index.md
+
 # Distribution / packaging
 .Python
 build/
