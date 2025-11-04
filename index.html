@@ -3,485 +3,450 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniel E. Barrera Rivera | Digital Humanities Researcher</title>
-  <meta name="description" content="Digital Humanities Researcher specializing in computational narratology and AI narrative systems. Seeking PhD opportunities in literary studies and digital humanities.">
+  <title>Daniel E. Barrera Rivera – Research Profile</title>
   <style>
-    * {
+    body {
+      font-family: 'Georgia', serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Georgia', 'Times New Roman', serif;
-      line-height: 1.6;
+      background-color: #f9f9f9;
       color: #333;
-      background-color: #fafafa;
+      line-height: 1.6;
     }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
-    /* Header */
     header {
-      background: linear-gradient(135deg, #2c3e50, #34495e);
-      color: white;
-      padding: 3rem 0;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+      color: #fff;
+      padding: 3rem 2rem;
       text-align: center;
-      position: relative;
+      border-bottom: 4px solid #0073e6;
     }
-
-    .header-content {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 1.5rem;
-    }
-
-    .profile-image {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      border: 4px solid white;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-      object-fit: cover;
-    }
-
-    h1 {
+    header h1 {
+      margin: 0;
       font-size: 2.5rem;
       font-weight: 300;
       letter-spacing: 1px;
-      margin-bottom: 0.5rem;
     }
-
-    .subtitle {
-      font-size: 1.2rem;
+    header .tagline {
+      font-size: 1.1rem;
+      margin: 1rem 0 0.5rem;
+      color: #e0e0e0;
       font-style: italic;
-      opacity: 0.9;
-      font-weight: 300;
     }
-
-    /* Navigation */
+    header .contact-links {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+    }
+    header .contact-links a {
+      color: #4db8ff;
+      text-decoration: none;
+      margin: 0 0.8rem;
+      transition: color 0.3s ease;
+    }
+    header .contact-links a:hover {
+      color: #80d4ff;
+      text-decoration: underline;
+    }
     nav {
-      background-color: #ecf0f1;
-      padding: 1rem 0;
-      border-bottom: 2px solid #bdc3c7;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       position: sticky;
       top: 0;
       z-index: 100;
+      padding: 0.8rem 0;
     }
-
-    .nav-links {
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      list-style: none;
+      flex-wrap: wrap;
     }
-
-    .nav-links a {
+    nav li {
+      margin: 0.3rem 1.5rem;
+    }
+    nav a {
+      color: #333;
       text-decoration: none;
-      color: #2c3e50;
       font-weight: 500;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
-      transition: all 0.3s ease;
+      font-family: Arial, sans-serif;
+      transition: color 0.3s ease;
+      padding: 0.3rem 0;
+      border-bottom: 2px solid transparent;
     }
-
-    .nav-links a:hover {
-      background-color: #d5dbdb;
-      color: #1a252f;
+    nav a:hover {
+      color: #0073e6;
+      border-bottom: 2px solid #0073e6;
     }
-
-    /* Main Content */
     main {
-      padding: 3rem 0;
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 2rem 4rem;
     }
-
-    .section {
+    section {
       margin-bottom: 4rem;
-      background: white;
-      padding: 2.5rem;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-      border-left: 4px solid #95a5a6;
     }
-
-    .section h2 {
-      color: #2c3e50;
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
+    h2 {
+      font-size: 2rem;
       font-weight: 400;
-      border-bottom: 2px solid #ecf0f1;
+      color: #1a1a1a;
+      border-bottom: 3px solid #0073e6;
       padding-bottom: 0.5rem;
-    }
-
-    .section p {
-      margin-bottom: 1rem;
-      text-align: justify;
-    }
-
-    /* Research Portfolio */
-    .research-intro {
-      font-size: 1.1rem;
-      color: #2c3e50;
       margin-bottom: 1.5rem;
     }
-
-    .ai-narratology {
-      background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 6px;
-      margin: 1.5rem 0;
-      border-left: 4px solid #3498db;
+    h3 {
+      font-size: 1.3rem;
+      color: #2d2d2d;
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
     }
-
-    /* Projects Grid */
-    .projects-grid {
+    .intro-text {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 2rem;
+    }
+    .intro-text em {
+      color: #0073e6;
+      font-weight: 500;
+    }
+    .project-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      gap: 1.5rem;
       margin-top: 2rem;
     }
-
     .project-card {
-      background: #f8f9fa;
+      background: #fff;
+      border-radius: 8px;
       padding: 1.5rem;
-      border-radius: 6px;
-      border: 1px solid #e9ecef;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      border-left: 4px solid #0073e6;
     }
-
     .project-card:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
     }
-
     .project-card h3 {
-      color: #2c3e50;
-      margin-bottom: 1rem;
+      margin-top: 0;
+      color: #0073e6;
       font-size: 1.2rem;
     }
-
+    .project-card .project-meta {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.8rem;
+      font-family: Arial, sans-serif;
+    }
     .project-card p {
+      font-size: 0.95rem;
       color: #555;
-      margin-bottom: 1rem;
-      text-align: left;
+      line-height: 1.6;
     }
-
-    /* PhD Objectives */
-    .phd-objectives {
-      background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-      padding: 2rem;
-      border-radius: 8px;
-      margin: 2rem 0;
-    }
-
-    .objectives-list {
-      list-style: none;
+    .research-interests {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
       margin-top: 1rem;
     }
-
-    .objectives-list li {
-      padding: 0.5rem 0;
-      padding-left: 2rem;
-      position: relative;
+    .interest-tag {
+      background: #e8f4fd;
+      color: #0073e6;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-family: Arial, sans-serif;
+      border: 1px solid #b3d9f2;
     }
-
-    .objectives-list li::before {
-      content: "▸";
-      position: absolute;
-      left: 0;
-      color: #3498db;
-      font-weight: bold;
+    .cta-section {
+      background: linear-gradient(135deg, #0073e6 0%, #005bb5 100%);
+      color: white;
+      padding: 2.5rem;
+      border-radius: 10px;
+      text-align: center;
+      margin-top: 3rem;
     }
-
-    /* Links and Buttons */
+    .cta-section h3 {
+      color: white;
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+    .cta-section p {
+      font-size: 1.05rem;
+      margin-bottom: 1.5rem;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
     .btn {
       display: inline-block;
-      padding: 0.7rem 1.5rem;
-      background-color: #34495e;
-      color: white;
+      padding: 0.8rem 1.8rem;
+      background: white;
+      color: #0073e6;
       text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-      margin: 0.25rem;
-      font-weight: 500;
+      border-radius: 5px;
+      font-weight: 600;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease;
+      border: 2px solid white;
     }
-
     .btn:hover {
-      background-color: #2c3e50;
+      background: transparent;
+      color: white;
+      transform: translateY(-2px);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+    .btn-secondary:hover {
+      background: white;
+      color: #0073e6;
+    }
+    .methodology-box {
+      background: #f0f8ff;
+      border-left: 5px solid #0073e6;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      border-radius: 5px;
+    }
+    .methodology-box h3 {
+      margin-top: 0;
+      color: #0073e6;
+    }
+    .timeline-item {
+      padding-left: 2rem;
+      border-left: 3px solid #e0e0e0;
+      margin-bottom: 1.5rem;
+      position: relative;
+    }
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -7px;
+      top: 0;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #0073e6;
+      border: 3px solid #fff;
+      box-shadow: 0 0 0 3px #e0e0e0;
+    }
+    .timeline-item h4 {
+      margin: 0 0 0.3rem;
+      color: #2d2d2d;
+      font-size: 1.1rem;
+    }
+    .timeline-item .timeline-meta {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 0.5rem;
+      font-family: Arial, sans-serif;
+    }
+    footer {
+      background-color: #1a1a1a;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      font-family: Arial, sans-serif;
+    }
+    footer a {
+      color: #4db8ff;
       text-decoration: none;
     }
-
-    .btn-outline {
-      background-color: transparent;
-      color: #34495e;
-      border: 2px solid #34495e;
+    footer a:hover {
+      text-decoration: underline;
     }
-
-    .btn-outline:hover {
-      background-color: #34495e;
-      color: white;
-    }
-
-    .external-link::after {
-      content: " ↗";
-      opacity: 0.7;
-      font-size: 0.9em;
-    }
-
-    /* Contact Section */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .contact-topics {
-      background-color: #f8f9fa;
-      padding: 1.5rem;
-      border-radius: 6px;
-    }
-
-    .contact-topics h3 {
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    .contact-topics ul {
-      list-style: none;
-      padding-left: 1rem;
-    }
-
-    .contact-topics li::before {
-      content: "•";
-      color: #3498db;
-      margin-right: 0.5rem;
-    }
-
-    .contact-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .contact-item {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-
-    /* Footer */
-    footer {
-      background-color: #2c3e50;
-      color: white;
-      text-align: center;
-      padding: 2rem 0;
-      margin-top: 4rem;
-    }
-
-    footer p {
-      opacity: 0.8;
-      font-size: 0.9rem;
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
-      .container {
-        padding: 0 1rem;
+      header h1 {
+        font-size: 1.8rem;
       }
-      
-      h1 {
-        font-size: 2rem;
+      header .tagline {
+        font-size: 1rem;
       }
-      
-      .nav-links {
-        flex-wrap: wrap;
-        gap: 1rem;
+      nav li {
+        margin: 0.3rem 0.8rem;
       }
-      
-      .section {
-        padding: 1.5rem;
+      main {
+        padding: 0 1rem 3rem;
       }
-      
-      .contact-grid {
+      h2 {
+        font-size: 1.6rem;
+      }
+      .project-grid {
         grid-template-columns: 1fr;
       }
-      
-      .header-content {
-        gap: 1rem;
+      .cta-buttons {
+        flex-direction: column;
       }
-    }
-
-    @media (max-width: 480px) {
-      .projects-grid {
-        grid-template-columns: 1fr;
-      }
-      
-      .nav-links {
-        justify-content: center;
-      }
-      
-      .nav-links a {
-        padding: 0.4rem 0.8rem;
-        font-size: 0.9rem;
-      }
-    }
-
-    /* Smooth scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    /* Focus styles for accessibility */
-    a:focus, button:focus {
-      outline: 2px solid #3498db;
-      outline-offset: 2px;
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div class="header-content">
-        <img src="./assets/images/Dan_BW02.png" alt="Daniel Barrera Rivera" class="profile-image">
-        <div>
-          <h1>Daniel E. Barrera Rivera</h1>
-          <p class="subtitle">Digital Humanities Researcher | Computational Narratologist | Literary Scholar</p>
-        </div>
-      </div>
+    <h1>Daniel E. Barrera Rivera</h1>
+    <p class="tagline">Tracing entanglements across texts, translations, and transatlantic imaginaries</p>
+    <div class="contact-links">
+      <a href="mailto:neophilology@gmail.com">✉ Email</a>
+      <a href="https://www.linkedin.com/in/danielbarrera-neophilology/" target="_blank">LinkedIn</a>
+      <a href="#cv">CV</a>
     </div>
   </header>
 
   <nav>
-    <div class="container">
-      <ul class="nav-links">
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#phd">PhD Project</a></li>
-        <li><a href="#cv">Curriculum Vitae</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#publications">Work</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <main class="container">
-    <!-- Research Portfolio -->
-    <section id="research" class="section">
-      <h2>Research Portfolio: Entangled Narratologies</h2>
-      <p class="research-intro">I study narrative as an <strong>entangled system</strong> — networks of human and non-human actants, technologies, and traditions.</p>
-      
-      <div class="ai-narratology">
-        <p>My work develops <strong>AI Narratology</strong>, a critical framework for understanding how algorithmic systems already participate in storytelling, shaping coherence, causality, and cultural memory.</p>
+  <main>
+    <!-- About Section -->
+    <section id="about">
+      <h2>About</h2>
+      <div class="intro-text">
+        <p>I am a literary and cultural studies researcher specializing in <em>spatial theory</em>, <em>postcolonial narratology</em>, and <em>computational text analysis</em>. My work examines narratives as entangled, material-semiotic networks that resist hierarchical ontologies, with a particular focus on how homecoming, displacement, and memory are figured across transatlantic literary traditions.</p>
+        
+        <p>Currently, I am developing a methodology I call <em>"entangled poetics"</em> to trace how texts emerge through relations of power, affect, and historical interconnection—moving beyond traditional close reading to embrace the messy, relational complexity of literary production.</p>
       </div>
-      
-      <p>This interdisciplinary approach bridges computational methods with literary theory, examining how narrative structures emerge and evolve across different media, translation practices, and technological interventions.</p>
-      
-      <a href="./research.md" class="btn">Read More About My Research</a>
+
+      <div class="methodology-box">
+        <h3>Entangled Poetics</h3>
+        <p>This approach combines spatial theory, feminist material-semiotics (Donna Haraway, Karen Barad), and postcolonial relationality (Édouard Glissant) to understand how narratives emerge not as isolated artifacts but as nodes in vast networks of cultural exchange, translation, and resistance. It asks: How do texts carry the traces of their histories? How do colonial and decolonial imaginaries shape narrative form?</p>
+      </div>
+
+      <h3>Research Interests</h3>
+      <div class="research-interests">
+        <span class="interest-tag">Postcolonial Narratology</span>
+        <span class="interest-tag">Spatial Theory</span>
+        <span class="interest-tag">Transatlantic Studies</span>
+        <span class="interest-tag">Computational Text Analysis</span>
+        <span class="interest-tag">Translation Studies</span>
+        <span class="interest-tag">Digital Humanities</span>
+        <span class="interest-tag">Classical Reception</span>
+        <span class="interest-tag">Memory & Displacement</span>
+        <span class="interest-tag">Feminist Theory</span>
+      </div>
     </section>
 
-    <!-- Featured Projects -->
-    <section id="projects" class="section">
-      <h2>Featured Projects</h2>
+    <!-- Current Research Section -->
+    <section id="research">
+      <h2>Current Research</h2>
       
-      <div class="projects-grid">
+      <h3>Topologies of Nostos: Transatlantic Figurations of Home and Memory</h3>
+      <p>My primary research investigates how postcolonial Anglophone and Spanish literatures refigure the ancient Greek concept of <em>nostos</em> (homecoming). Rather than treating nostos as a universal theme, I explore how authors from diasporic, displaced, and decolonial contexts reimagine homecoming as a spatial practice—one that resists colonial cartographies and linear narratives of return.</p>
+      
+      <p>This interphilological project reads across English and Spanish, tracing how writers like Derek Walcott, Amitav Ghosh, and contemporary Latin American poets reconfigure classical narrative structures to address contemporary experiences of migration, memory, and belonging.</p>
+
+      <h3>Recent Thesis: Beyond Homer and the Human</h3>
+      <p>My Master's thesis examined how contemporary anglophone retellings of Homer's <em>Odyssey</em> deploy computational metaphors and posthuman aesthetics to critique anthropocentric narrative traditions. Using affect theory and algorithmic analysis, I traced how authors like Madeline Miller and Margaret Atwood use repetition, iteration, and networked narrative structures to challenge the heroic individualism of classical epic.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      
+      <div class="project-grid">
         <div class="project-card">
-          <h3>Perilexia: Character Transformation in Victorian Fiction</h3>
-          <p>Computational framework for analyzing narrative arcs and focalization in Victorian novels using machine learning and natural language processing techniques.</p>
-          <a href="./projects/perilexia.md" class="btn btn-outline">Project Overview</a>
+          <h3>DanZine</h3>
+          <div class="project-meta">Visual-Critical Intervention | 2025–present</div>
+          <p>A mixed-media fanzine developing tidal poetics through collage, counter-cartography, and bookmaking. Emerged from seminar work on aquatic environments in postcolonial literature. Issue 1 features readings of Ghosh, Walcott, De Robertis, and the Spilhaus projection as entangled oceanic figurations.</p>
         </div>
-        
+
         <div class="project-card">
-          <h3>Target as Source: Four Centuries of Odyssey Translations</h3>
-          <p>Computational analysis of cultural drift across 400 years of Homeric translation, examining how translation practices reflect changing literary and cultural values.</p>
-          <a href="https://neophilology.github.io/English-Homer/" class="btn btn-outline external-link" target="_blank" rel="noopener">Project Documentation</a>
+          <h3>Homerica Dataset</h3>
+          <div class="project-meta">Database | 2025–present</div>
+          <p>Comprehensive database documenting the entanglement between Homeric epic and Anglophone cultural production from 1800 to present. Tracks retellings, translations, adaptations, and transfigurations, revealing a contemporary shift toward feminist and decolonial engagements with classical narrative.</p>
         </div>
-        
+
         <div class="project-card">
-          <h3>Beyond Homer: Digital Dissertation with Appendices</h3>
-          <p>Master's thesis on classical retellings, algorithms, and feminist narratology, exploring posthuman approaches to ancient literature.</p>
-          <a href="https://neophilology.github.io/Beyond-Homer/" class="btn btn-outline external-link" target="_blank" rel="noopener">View Appendices</a>
+          <h3>Homer's Living Network</h3>
+          <div class="project-meta">Digital Humanities | 2024–2025</div>
+          <p>Computational text analysis investigating how stylistic features at the lexeme level register cultural drift across twentieth-century English translations of Homer's Odyssey. Combines distant reading methods with close analysis of translation choices to map shifting cultural values.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Figurations of America</h3>
+          <div class="project-meta">Comparative Poetry | 2024–present</div>
+          <p>Close readings of Spanish and English poetry addressing "America" as lived experience. Examines how spatial and cultural imaginaries are contested and reconfigured across linguistic and national boundaries, from Whitman to Neruda to contemporary border poets.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Perilexia</h3>
+          <div class="project-meta">Algorithmic Narratology | 2023</div>
+          <p>Five-stage computational algorithm identifying previously unrecognized lexical patterns structuring character transformation in Victorian novels. Coined the term "perilexia" to describe these recurrent narrative structures that operate below the level of conscious authorial intention.</p>
         </div>
       </div>
-      
-      <div style="text-align: center; margin-top: 2rem;">
-        <a href="./projects.md" class="btn">See All Projects</a>
-      </div>
     </section>
 
-    <!-- Future Directions -->
-    <section id="phd" class="section">
-      <h2>Future Directions: PhD Project</h2>
+    <!-- Education & Experience -->
+    <section id="publications">
+      <h2>Education & Experience</h2>
       
-      <div class="phd-objectives">
-        <p>My doctoral research will expand this work into a comprehensive framework for understanding narrative in the age of large language models.</p>
-        
-        <p><strong>Research Objectives:</strong></p>
-        <ul class="objectives-list">
-          <li>Develop recognition systems for diverse narrative traditions</li>
-          <li>Theorize entangled human–AI storytelling processes</li>
-          <li>Build collaborative networks across literary studies and computational research</li>
-          <li>Create methodologies for ethical AI integration in humanities research</li>
-        </ul>
+      <div class="timeline-item">
+        <h4>Master's in English Literatures and Cultures</h4>
+        <div class="timeline-meta">University of Tübingen, Germany | 2023–2025 | Grade: 1.21</div>
+        <p>Thesis: <em>Beyond Homer and the Human: Affects and Algorithms in Posthuman Odysseys</em><br>
+        Supervisors: Prof. Dr. Christoph Reinfandt, Prof. Dr. Ingrid Hotz-Davies</p>
       </div>
-      
-      <p>This project aims to contribute both theoretical frameworks and practical tools for understanding how artificial intelligence systems participate in cultural production, with particular attention to narrative coherence, cultural memory, and interpretive practices.</p>
-      
-      <a href="./phd.md" class="btn">Read More About My PhD Project</a>
+
+      <div class="timeline-item">
+        <h4>Data Science Professional Certificate</h4>
+        <div class="timeline-meta">University of Toronto, Canada | 2021–2022</div>
+        <p>Specialized training in Python, machine learning, NLP, and data visualization for humanities research applications.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Digital Humanities Advanced Diploma</h4>
+        <div class="timeline-meta">Universidad Iberoamericana, CDMX, México | 2021</div>
+        <p>Focus on computational methods for literary analysis, corpus construction, and digital scholarly practices.</p>
+      </div>
+
+      <div class="timeline-item">
+        <h4>Bachelor's in Modern Languages & Literatures (English)</h4>
+        <div class="timeline-meta">UNAM, México | 2016–2020 | Honors (9.48)</div>
+        <p>Thesis: <em>Toward an Etiology of the Modern Chaucer: A Prolegomenon</em></p>
+      </div>
+
+      <h3 style="margin-top: 3rem;">Conference Presentations</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>American Comparative Literature Association (ACLA)</strong>, Chicago, USA (2020)</li>
+        <li><strong>American Comparative Literature Association (ACLA)</strong>, Utrecht, Netherlands (2017)</li>
+        <li><strong>CLASH Conference</strong>, Adam Mickiewicz University, Poznań, Poland (2016)</li>
+      </ul>
+
+      <h3>Grants & Awards</h3>
+      <ul style="line-height: 1.8;">
+        <li><strong>FONCA Creative Writing Fellowship</strong>, National Endowment for the Arts and Culture, México (2014) – One-year grant for fiction writing in Spanish</li>
+      </ul>
     </section>
 
-    <!-- Curriculum Vitae -->
-    <section id="cv" class="section">
-      <h2>Curriculum Vitae</h2>
-      <p>Explore my academic and professional background through an interactive CV or download the standard PDF version for formal applications.</p>
-      
-      <div style="display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap;">
-        <a href="./cv.html" class="btn">📄 Interactive CV</a>
-        <a href="./assets/CV-Daniel_Barrera_2025.pdf" class="btn btn-outline" target="_blank">⬇️ Download PDF CV</a>
-      </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-      <h2>Contact</h2>
-      
-      <div class="contact-grid">
-        <div class="contact-topics">
-          <h3>Areas for Collaboration</h3>
-          <ul>
-            <li>Computational narratology and digital humanities</li>
-            <li>Classical reception and contemporary retellings</li>
-            <li>AI systems, cultural memory, and narrative theory</li>
-            <li>Translation studies and cross-cultural literary analysis</li>
-          </ul>
-        </div>
-        
-        <div class="contact-info">
-          <div class="contact-item">
-            <strong>📧 Email:</strong>
-            <a href="mailto:neophilology@gmail.com">neophilology@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <strong>🔗 GitHub:</strong>
-            <a href="https://github.com/neophilology" target="_blank" rel="noopener">neophilology</a>
-          </div>
-          <div class="contact-item">
-            <strong>💼 LinkedIn:</strong>
-            <a href="https://linkedin.com/in/danielbarrera-neophilology" target="_blank" rel="noopener">danielbarrera-neophilology</a>
-          </div>
+    <!-- Contact/CTA Section -->
+    <section id="contact">
+      <div class="cta-section">
+        <h3>Let's Connect</h3>
+        <p>I'm always interested in conversations about postcolonial theory, computational methods in the humanities, translation studies, and interdisciplinary approaches to literary scholarship.</p>
+        <div class="cta-buttons">
+          <a href="mailto:neophilology@gmail.com" class="btn">Email Me</a>
+          <a href="cv.html" class="btn btn-secondary" id="cv">View Full CV</a>
+          <a href="CV-Daniel_Barrera_2025.pdf" class="btn btn-secondary">Download CV (PDF)</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container">
-      <p>© 2025 Daniel E. Barrera Rivera | Site powered by GitHub Pages</p>
-    </div>
+    <p>© 2025 Daniel E. Barrera Rivera | Literary & Cultural Studies Researcher</p>
+    <p><a href="https://www.linkedin.com/in/danielbarrera-neophilology/">LinkedIn</a> | <a href="mailto:neophilology@gmail.com">neophilology@gmail.com</a></p>
   </footer>
 
   <script>
@@ -499,34 +464,29 @@
       });
     });
 
-    // Add active state to navigation
+    // Add active state to nav based on scroll position
     window.addEventListener('scroll', () => {
       const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-links a');
+      const navLinks = document.querySelectorAll('nav a');
       
       let current = '';
       sections.forEach(section => {
         const sectionTop = section.offsetTop;
         const sectionHeight = section.clientHeight;
-        if (scrollY >= (sectionTop - 200)) {
+        if (scrollY >= (sectionTop - 100)) {
           current = section.getAttribute('id');
         }
       });
 
       navLinks.forEach(link => {
-        link.classList.remove('active');
+        link.style.color = '#333';
+        link.style.borderBottom = '2px solid transparent';
         if (link.getAttribute('href') === `#${current}`) {
-          link.classList.add('active');
+          link.style.color = '#0073e6';
+          link.style.borderBottom = '2px solid #0073e6';
         }
       });
     });
   </script>
-
-  <style>
-    .nav-links a.active {
-      background-color: #3498db;
-      color: white;
-    }
-  </style>
 </body>
 </html>

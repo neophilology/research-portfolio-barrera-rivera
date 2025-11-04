@@ -24,7 +24,7 @@
     main {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem 4rem; /* extra bottom padding for fixed button */
+      padding: 0 1rem 4rem;
     }
     .cv-section {
       margin-bottom: 2rem;
@@ -81,14 +81,13 @@
     }
     .cv-item.expanded .cv-details {
       opacity: 1;
-      max-height: 500px;
+      max-height: 800px;
       margin-top: 0.5rem;
     }
-    /* On larger screens, show details on hover as well */
     @media (min-width: 768px) {
       .cv-item:hover .cv-details {
         opacity: 1;
-        max-height: 500px;
+        max-height: 800px;
         margin-top: 0.5rem;
       }
       .cv-item:hover .toggle-icon {
@@ -128,7 +127,6 @@
       transform: translateY(-2px);
       text-decoration: none;
     }
-    /* Expand all button */
     .expand-controls {
       text-align: center;
       margin-bottom: 2rem;
@@ -146,7 +144,6 @@
     .expand-all-btn:hover {
       background: #555;
     }
-    /* Mobile responsiveness */
     @media (max-width: 768px) {
       header {
         padding: 1.5rem 1rem;
@@ -169,15 +166,15 @@
 <body>
   <header>
     <h1>Daniel E. Barrera Rivera</h1>
-    <p>Digital Humanities Researcher | Computational Narratologist | Literary Scholar</p>
-    <p><a href="mailto:neophilology@gmail.com" style="color:#fff;">neophilology@gmail.com</a> | <a href="https://www.linkedin.com/in/danielbarrera-neophilology/" style="color:#fff;">LinkedIn</a></p>
+    <p>Literary & Cultural Studies Researcher | Computational Narratologist | Digital Humanist</p>
+    <p><a href="mailto:neophilology@gmail.com" style="color:#fff;">neophilology@gmail.com</a> | <a href="https://www.linkedin.com/in/danielbarrera-neophilology/" style="color:#fff;">LinkedIn</a> | +49 152 9260 9750</p>
   </header>
 
   <main>
     <!-- Profile -->
     <section class="cv-section">
       <h2>Profile</h2>
-      <p>Digital humanities researcher bridging literary narratology and computational methods. My work develops an <em>AI narratology</em> to analyze how narrative emerges across texts, translations, and algorithmic systems.</p>
+      <p>I am a literary and cultural studies researcher specializing in spatial theory, postcolonial narratology, and computational text analysis. My work examines narratives as entangled, material-semiotic networks that resist hierarchical ontologies, with a particular focus on how homecoming, displacement, and memory are figured across transatlantic literary traditions. I am developing a methodology I call <em>"entangled poetics"</em> to trace how texts emerge through relations of power, affect, and historical interconnection.</p>
     </section>
 
     <!-- Expand Controls -->
@@ -191,102 +188,123 @@
       <ul class="cv-list">
         <li class="cv-item">
           <h3>Master's in English Literatures and Cultures (2023–2025)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">University of Tübingen, Germany.<br>Thesis: <em>Beyond Homer and the Human: Affects and Algorithms in Posthuman Odysseys</em>.</div>
+          <div class="cv-details">University of Tübingen, Germany | Final Grade: 1.21<br><br>Thesis: <em>Beyond Homer and the Human: Affects and Algorithms in Posthuman Odysseys</em><br>First Supervisor: Prof. Dr. Christoph Reinfandt<br>Second Supervisor: Prof. Dr. Ingrid Hotz-Davies</div>
         </li>
         <li class="cv-item">
           <h3>Data Science, Professional Certificate (2021–2022)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">University of Toronto, Canada.</div>
+          <div class="cv-details">University of Toronto, Canada</div>
         </li>
         <li class="cv-item">
           <h3>Digital Humanities, Advanced Diploma (2021)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Universidad Iberoamericana, CDMX, México.</div>
+          <div class="cv-details">Universidad Iberoamericana, CDMX, México</div>
         </li>
         <li class="cv-item">
-          <h3>Bachelor's in Modern Languages & Literatures (English), 2016–2020<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">UNAM, México — Graduated with Honors.</div>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Research & Scholarly Activity -->
-    <section class="cv-section">
-      <h2>Research & Scholarly Activity</h2>
-      <ul class="cv-list">
-        <li class="cv-item">
-          <h3>Projects<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">
-            • Homer's Living Network — DH project using data science on Odyssey translations.<br>
-            • Perilexia — Five-stage algorithm identifying lexical patterns in Victorian novels.<br>
-            • Homerica (Dataset) — Archive of retellings, translations, adaptations of Homeric epic.
-          </div>
-        </li>
-        <li class="cv-item">
-          <h3>Conference Presentations<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">
-            • ACLA Annual Meeting, Chicago (2020)<br>
-            • ACLA Annual Meeting, Utrecht (2017)<br>
-            • CLASH, Poznan (2016)
-          </div>
-        </li>
-        <li class="cv-item">
-          <h3>Grants<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">FONCA Creative Writing Fellowship, one-year grant, México (2014).</div>
+          <h3>Bachelor's in Modern Languages & Literatures (English) (2016–2020)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Universidad Nacional Autónoma de México (UNAM) – Graduated with Honors (9.48)<br><br>Thesis: <em>Toward an Etiology of the Modern Chaucer: A Prolegomenon</em></div>
         </li>
       </ul>
     </section>
 
-    <!-- Experience -->
+    <!-- Research Projects -->
     <section class="cv-section">
-      <h2>Experience</h2>
+      <h2>Research Projects</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Editor & Quality Auditor (2023)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Department of Public Education (SEP), CDMX. Edited and proofread manuscripts, collaborating with educators, linguists, and publishing teams.</div>
+          <h3>Topologies of Nostos (2025–present)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Interphilological investigation of how postcolonial Anglophone and Spanish literatures refigure the ancient Greek concept of nostos (homecoming) through displacement, diaspora, and decolonial imagination. Develops "entangled poetics" as a methodology combining spatial theory, feminist material-semiotics, and postcolonial relationality.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor | Editorial & SEO Specialist (2022)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">StudySmarter, Germany. Audited academic content, improved editorial workflows, developed NLP app for cross-platform consistency.</div>
+          <h3>DanZine: Critical Readings Through Hybrid Figurations (2025–present)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">A visual-critical intervention sprung from the advanced seminar on Aquatic Environments in Postcolonial Literature (University of Tübingen). Mixed-media fanzine developing tidal poetics through collage, counter-cartography, and bookmaking experimentation. Number 1 includes readings of Ghosh, Walcott, De Robertis, Mediterranean migration, and the Spilhaus projection as entangled oceanic figurations of displacement, memory, and relation.</div>
         </li>
         <li class="cv-item">
-          <h3>Quality Auditor & Content Developer (2021–2022)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">OpenTec, CDMX. Supervised e-learning content, managed corporate partnerships, optimized factual accuracy.</div>
+          <h3>Figurations of America (2024–present)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Close reading of Spanish and English poetry addressing America as lived experience, focusing on how spatial and cultural imaginaries are contested and reconfigured across linguistic and national boundaries.</div>
         </li>
         <li class="cv-item">
-          <h3>Editor & Proofreader (2018–2021)<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Aliat Universidades, CDMX. Ensured metadata accuracy, reviewed manuscripts, improved clarity and engagement.</div>
+          <h3>Homerica (Dataset) (2025–present)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Comprehensive database documenting the entanglement between Homeric epic and Anglophone cultural production—tracking retellings, translations, adaptations, and transfigurations from 1800 to the present. Reveals contemporary shift toward feminist and decolonial engagements with classical narrative.</div>
+        </li>
+        <li class="cv-item">
+          <h3>Homer's Living Network (2024–2025)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Digital humanities investigation using computational text analysis to measure how stylistic features at the lexeme level register cultural drift across twentieth-century English translations of Homer's Odyssey. Combines distant reading methods with close analysis of translation choices.</div>
+        </li>
+        <li class="cv-item">
+          <h3>Perilexia (2023)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Developed a computational algorithm identifying previously unrecognized lexical patterns structuring character transformation in Victorian novels. Coined the term "perilexia" to describe these recurrent narrative structures.</div>
         </li>
       </ul>
     </section>
 
-    <!-- Skills -->
+    <!-- Research Skills & Methods -->
     <section class="cv-section">
-      <h2>Skills & Tools</h2>
+      <h2>Research Skills & Methods</h2>
       <ul class="cv-list">
         <li class="cv-item">
-          <h3>Programming & Data Science<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Python (ML, NLP, visualization), NLTK, spaCy, HuggingFace, Textacy, Gensim, Regex. Custom tool development. Basic R.</div>
+          <h3>Computational Text Analysis<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Python (NLTK, spaCy, Gensim), stylometry, corpus construction, distant reading methods</div>
         </li>
         <li class="cv-item">
-          <h3>Digital Humanities & Editorial<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Text analysis, corpus construction, stylometry, distant reading. Markdown, HTML, LaTeX. CMS workflows.</div>
+          <h3>Digital Humanities<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Computational linguistics and narratology, lexical network analysis, translation studies workflows</div>
         </li>
         <li class="cv-item">
           <h3>Data Visualization<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Pandas, Matplotlib, Seaborn, Plotly. Experience with manuscript geographies and lexical networks.</div>
+          <div class="cv-details">Pandas, Matplotlib, Plotly (manuscript distributions, cultural drift patterns)</div>
         </li>
         <li class="cv-item">
-          <h3>Collaboration & Project Management<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">Git, Asana, Trello, Slack, Google Workspace, Microsoft Office.</div>
+          <h3>Academic Publishing<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">LaTeX, Markdown, content management systems, editorial workflows</div>
         </li>
         <li class="cv-item">
           <h3>Languages<span class="toggle-icon">▶</span></h3>
-          <div class="cv-details">English (fluent), Spanish (fluent), German (basic).</div>
+          <div class="cv-details">English (fluent), Spanish (fluent), German (basic)</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Presentations & Conferences -->
+    <section class="cv-section">
+      <h2>Presentations & Conferences</h2>
+      <ul class="cv-list">
+        <li class="cv-item">
+          <h3>ACLA Annual Meeting, Chicago, USA (2020)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">American Comparative Literature Association</div>
+        </li>
+        <li class="cv-item">
+          <h3>ACLA Annual Meeting, Utrecht, Netherlands (2017)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">American Comparative Literature Association</div>
+        </li>
+        <li class="cv-item">
+          <h3>CLASH, Poznań, Poland (2016)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Comparative Literature, Anthropology, Sociology, and History conference at Adam Mickiewicz University</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Grants & Awards -->
+    <section class="cv-section">
+      <h2>Grants & Awards</h2>
+      <ul class="cv-list">
+        <li class="cv-item">
+          <h3>FONCA Creative Writing Fellowship (2014)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">National Endowment for the Arts and Culture (FONCA), México. One-year grant for fiction writing in Spanish.</div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="cv-section">
+      <h2>Professional Experience</h2>
+      <ul class="cv-list">
+        <li class="cv-item">
+          <h3>Editorial & Content Development (2018–2023)<span class="toggle-icon">▶</span></h3>
+          <div class="cv-details">Roles at the Department of Public Education (México), StudySmarter (Germany), OpenTec (México), and Aliat Universidades (México), specializing in academic manuscript editing, quality assurance for educational content, and NLP application development for cross-platform consistency.</div>
         </li>
       </ul>
     </section>
   </main>
 
-  <!-- Back home button with improved functionality -->
   <a href="/" class="back-home" onclick="handleBackHome(event)">← Back to Home</a>
 
   <footer>
@@ -296,17 +314,13 @@
   <script>
     let allExpanded = false;
 
-    // Handle individual item clicks
     document.querySelectorAll('.cv-item').forEach(item => {
       item.addEventListener('click', (e) => {
-        // Prevent event bubbling if clicking on links inside details
         if (e.target.tagName === 'A') return;
-        
         item.classList.toggle('expanded');
       });
     });
 
-    // Toggle all sections
     function toggleAllSections() {
       const allItems = document.querySelectorAll('.cv-item');
       const button = document.querySelector('.expand-all-btn');
@@ -322,15 +336,10 @@
       }
     }
 
-    // Improved back home functionality
     function handleBackHome(event) {
-      // Try different common home page paths
       const possiblePaths = ['/', '/index.md', '../index.md', './index.md'];
-      
-      // Check if we can determine the correct path based on current location
       const currentPath = window.location.pathname;
       
-      // If we're in a subdirectory, try going up one level
       if (currentPath.includes('/')) {
         const pathParts = currentPath.split('/');
         if (pathParts.length > 2) {
@@ -339,15 +348,10 @@
           return;
         }
       }
-      
-      // Default behavior - let the browser handle the link
-      // The href="/" will work for most GitHub Pages setups
     }
 
-    // Keyboard accessibility
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
-        // Close all expanded sections on Escape
         document.querySelectorAll('.cv-item.expanded').forEach(item => {
           item.classList.remove('expanded');
         });
@@ -357,7 +361,6 @@
       }
     });
 
-    // Add focus styles for keyboard navigation
     document.querySelectorAll('.cv-item').forEach(item => {
       item.setAttribute('tabindex', '0');
       
