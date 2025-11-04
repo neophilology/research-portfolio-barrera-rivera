@@ -20,6 +20,39 @@
       text-align: center;
       border-bottom: 4px solid #0073e6;
     }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 1000px;
+      margin: 0 auto;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+    .header-text {
+      flex: 1;
+      min-width: 280px;
+      text-align: left;
+    }
+    .header-photo img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-photo img {
+        margin-top: 1.5rem;
+        width: 130px;
+        height: 130px;
+      }
+    }
     header h1 {
       margin: 0;
       font-size: 2.5rem;
@@ -290,12 +323,19 @@
 </head>
 <body>
   <header>
-    <h1>Daniel E. Barrera-Rivera</h1>
-    <p class="tagline">Tracing entanglements across texts and transatlantic imaginaries</p>
-    <div class="contact-links">
-      <a href="mailto:neophilology@gmail.com">✉ Email</a>
-      <a href="https://www.linkedin.com/in/danielbarrera-neophilology/" target="_blank">LinkedIn</a>
-      <a href="#cv">CV</a>
+    <div class="header-container">
+      <div class="header-text">
+        <h1>Daniel E. Barrera-Rivera</h1>
+        <p class="tagline">Tracing entanglements across texts and transatlantic imaginaries</p>
+        <div class="contact-links">
+          <a href="mailto:neophilology@gmail.com">✉ Email</a>
+          <a href="https://www.linkedin.com/in/danielbarrera-neophilology/" target="_blank">LinkedIn</a>
+          <a href="#cv">CV</a>
+        </div>
+      </div>
+      <div class="header-photo">
+        <img src="assets/images/Dan_BW02.png" alt="Daniel E. Barrera Rivera portrait">
+      </div>
     </div>
   </header>
 
@@ -329,7 +369,7 @@
         <span class="interest-tag">Postcolonial Narratology</span>
         <span class="interest-tag">Spatial Theory</span>
         <span class="interest-tag">Transatlantic Studies</span>
-        <span class="interest-tag">Computational Text Analysis</span>
+        <span class="interest-tag">Computational Text Analysis / NLP</span>
         <span class="interest-tag">Translation Studies</span>
         <span class="interest-tag">Digital Humanities</span>
         <span class="interest-tag">Classical Reception</span>
@@ -342,7 +382,7 @@
     <section id="research">
       <h2>Current Research</h2>
       
-      <h3>Topologies of Nostos: Transatlantic Figurations of Home and Memory</h3>
+      <h3>Entangled Poetics: Postcolonial Topologies of Nostos/Homecoming</h3>
       <p>My primary research investigates how postcolonial Anglophone and Spanish literatures refigure the ancient Greek concept of <em>nostos</em> (homecoming). Rather than treating nostos as a universal theme, I explore how authors from diasporic, displaced, and decolonial contexts reimagine homecoming as a spatial practice—one that resists colonial cartographies and linear narratives of return.</p>
 
       <p>This interphilological project reads across English and Spanish, tracing how writers like Louise Glück, Margaret Atwood, Rivera Garza, Tommy Orange, and Ada Limón reconfigure classical narrative structures to address contemporary experiences of migration, memory, and belonging.</p>
