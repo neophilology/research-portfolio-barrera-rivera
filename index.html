@@ -36,11 +36,13 @@
     }
     .header-photo img {
       width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 1px solid #e0e0e0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      height: auto;
+      aspect-ratio: 4 / 5;
+      object-fit: contain;
+      border-radius: 8px;
+      border: none;
+      box-shadow: none;
+      background-color: transparent;
     }
     @media (max-width: 768px) {
       .header-container {
@@ -55,9 +57,10 @@
     }
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
       font-weight: 300;
       letter-spacing: 1px;
+      white-space: nowrap;
     }
     header .tagline {
       font-size: 1.1rem;
@@ -325,7 +328,7 @@
   <header>
     <div class="header-container">
       <div class="header-text">
-        <h1>Daniel E. Barrera-Rivera</h1>
+        <h1>Daniel&nbsp;E.&nbsp;Barrera-Rivera</h1>
         <p class="tagline">Tracing entanglements across texts and transatlantic imaginaries</p>
         <div class="contact-links">
           <a href="mailto:neophilology@gmail.com">✉ Email</a>
@@ -334,7 +337,7 @@
         </div>
       </div>
       <div class="header-photo">
-        <img src="assets/images/Dan_BW02.png" alt="Daniel E. Barrera Rivera portrait">
+        <img src="assets/images/DBR_EntPoe.gif" alt="Daniel E. Barrera Rivera portrait">
       </div>
     </div>
   </header>
