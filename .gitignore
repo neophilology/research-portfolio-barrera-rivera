@@ -10,6 +10,9 @@ __pycache__/
 *.swp
 index.md
 
+# the bother
+**/.DS_Store
+
 # Distribution / packaging
 .Python
 build/
